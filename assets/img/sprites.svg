@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <defs>
+    <symbol id="mail" width="24" height="24" fill="none" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M19 4a2.997 2.997 0 0 1 2.995 2.901c.003.025.003.05.003.076L22 7v10a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V7l.001-.023c0-.026.001-.05.004-.076A2.997 2.997 0 0 1 5 4h14Zm-6.445 9.832a1 1 0 0 1-1.11 0L4 8.868V17a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V8.868l-7.445 4.964ZM5 6a1 1 0 0 0-.888.54L12 11.798l7.887-5.258A.998.998 0 0 0 19 6H5Z"/>
+    </symbol>
+    <symbol id="map-pin" width="24" height="24" fill="none" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 2a9 9 0 0 1 6.364 15.365l-4.243 4.242a3 3 0 0 1-4.241 0l-4.244-4.242A9.002 9.002 0 0 1 12 2Zm0 2a7 7 0 0 0-4.95 11.95l4.244 4.243.073.066a1.001 1.001 0 0 0 1.34-.066l4.243-4.244A7.001 7.001 0 0 0 12 4Zm0 3a4 4 0 1 1-.001 8 4 4 0 0 1 0-8Zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/>
+    </symbol>
+    <symbol id="phone" width="24" height="24" fill="none" viewBox="0 0 24 24">
+      <path fill="currentColor" d="m19 15.677-3.581-1.433-1.062 1.77a1 1 0 0 1-1.3.383 12 12 0 0 1-5.453-5.455 1 1 0 0 1 .381-1.3l1.77-1.062L8.323 5H5a1 1 0 0 0-1 .98 15 15 0 0 0 14.02 14.019A.998.998 0 0 0 19 19v-3.323ZM21 19a3 3 0 0 1-3.06 2.998A17 17 0 0 1 2 6a3 3 0 0 1 3-3h4a1 1 0 0 1 .929.629l2 5a1 1 0 0 1-.414 1.228L9.842 10.86a9.996 9.996 0 0 0 3.297 3.297l1.004-1.672.05-.076a1 1 0 0 1 1.178-.338l5 2A1 1 0 0 1 21 15v4Z"/>
+    </symbol>
+    <symbol id="menu" width="24" height="24" fill="none" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M20 17a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2h16Zm0-6a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2h16Zm0-6a1 1 0 1 1 0 2H4a1 1 0 0 1 0-2h16Z"/>
+    </symbol>
+    <symbol id="facebook" width="24" height="24" fill="none" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M13 8a2 2 0 0 1 2-2h2V4h-2a4 4 0 0 0-4 4v2a1 1 0 0 1-1 1H8v2h2a1 1 0 0 1 1 1v6h2v-6a1 1 0 0 1 1-1h2.22l.5-2H14a1 1 0 0 1-1-1V8Zm2 1h3a1 1 0 0 1 .97 1.242l-1 4A1 1 0 0 1 17 15h-2v6a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-6H7a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h2V8a6 6 0 0 1 6-6h3a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-3v1Z"/>
+    </symbol>
+    <symbol id="instagram" width="24" height="24" fill="none" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M16 3a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5h8ZM8 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm4 3a4 4 0 1 1 0 7.999A4 4 0 0 1 12 8Zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm4.5-3.5a1 1 0 0 1 1 1v.01a1 1 0 1 1-2 0V7.5a1 1 0 0 1 1-1Z"/>
+    </symbol>
+    <symbol id="plus" width="24" height="24" fill="none" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M11 19v-6H5a1 1 0 1 1 0-2h6V5a1 1 0 1 1 2 0v6h6a1 1 0 1 1 0 2h-6v6a1 1 0 1 1-2 0Z"/>
+    </symbol>
+    <symbol id="chevron-left" width="24" height="24" fill="none" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M14.293 5.293a1 1 0 1 1 1.414 1.414L10.414 12l5.293 5.293a1 1 0 1 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6Z"/>
+    </symbol>
+    <symbol id="chevron-right-filled" width="24" height="24" fill="none" viewBox="0 0 24 24">
+      <path fill="currentColor" d="m9.708 5.293 6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 1 1-1.414-1.414L13.587 12 8.294 6.707a1 1 0 0 1 1.414-1.414Z"/>
+    </symbol>
+    <symbol id="minus" width="24" height="24" fill="none" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M19 11a1 1 0 1 1 0 2H5a1 1 0 1 1 0-2h14Z"/>
+    </symbol>
+    <symbol id="arrow-up" width="24" height="24" fill="none" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M11 19V7.414l-4.293 4.293a1 1 0 1 1-1.414-1.414l6-6 .076-.068a1 1 0 0 1 1.338.068l6 6a1 1 0 1 1-1.414 1.414L13 7.414V19a1 1 0 1 1-2 0Z"/>
+    </symbol>
+    <symbol id="youtube" width="24" height="24" fill="none" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H6a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5h12ZM6 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6Zm3.507 3.13a1.001 1.001 0 0 1 1.008.013l5 3a1 1 0 0 1 0 1.714l-5 3A1.001 1.001 0 0 1 9 15V9a1 1 0 0 1 .507-.87ZM11 13.233 13.056 12 11 10.766v2.467Z"/>
+    </symbol>
+    <symbol id="twitter" width="24" height="24" fill="none" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M17.293 5.293a1 1 0 1 1 1.414 1.414L13.414 12l5.293 5.293a1 1 0 1 1-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 1 1-1.414-1.414L10.586 12 5.293 6.707a1 1 0 1 1 1.414-1.414L12 10.586l5.293-5.293Z"/>
+    </symbol>
+    <symbol id="quote" width="24" height="24" fill="none" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M6 7v3h3V7H6Zm9 0v3h3V7h-3Zm-4 6c0 1.502-.378 2.824-1.219 3.875-.838 1.048-2.055 1.724-3.539 2.095a1 1 0 1 1-.484-1.94c1.182-.295 1.966-.786 2.46-1.405C8.712 15.009 9 14.165 9 13v-1H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v6Zm9 0c0 1.502-.378 2.824-1.219 3.875-.838 1.048-2.055 1.724-3.539 2.095a1 1 0 1 1-.484-1.94c1.182-.295 1.966-.786 2.46-1.405.493-.616.782-1.46.782-2.625v-1h-3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v6Z"/>
+    </symbol>
+  </defs>
+</svg>

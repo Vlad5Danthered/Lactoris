@@ -37,28 +37,40 @@
   <body>
     <div class="page__inner">
       <div class="page__content">
-        <div class="page-header__wrapper">
-          <header id="header" class="header">
-            <a href="#" class="logo">Лактокріс</a>
-            <nav class="nav">
-                <a href="#">Проблематика</a>
-                <a href="#">Про Лактокріс</a>
-                <a href="#">FAQ</a>
-                <a href="#">Корисно знати</a>
+        <header class="page-header__wrapper">
+          <div id="header" class="header">
+            <a href="#" class="logo" aria-label="На головну сторінку Лактокріс">Лактокріс</a>
+            <nav class="nav nav--desktop" aria-label="Головне меню">
+              <ul class="not-style">
+                <li><a href="#">Проблематика</a></li>
+                <li><a href="#">Про Лактокріс</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Корисно знати</a></li>
+              </ul>
             </nav>
-            <a href="#" class="btn btn--primary">Де придбати</a>
+            <a href="#" class="btn btn--primary nav--desktop">Де придбати</a>
+            <button class="btn btn--primary burger" id="header-burger" aria-expanded="false" aria-controls="mobile-nav" aria-label="Відкрити меню"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+          </div>
+          <nav class="nav nav--mobile" id="mobile-nav" label="Мобільне меню">
+            <ul class="not-style">
+              <li><a href="#">Проблематика</a></li>
+              <li><a href="#">Про Лактокріс</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Корисно знати</a></li>
+            </ul>
+            <a href="#" class="btn btn--primary nav--mobile">Де придбати</a>
+          </nav>
         </header>
-        </div>
         <main class="main">
-          <section class="hero section">
+          <!-- <section class="hero section">
             <div class="hero__content">
               <h1>Лактокріс</h1>
               <span>Твоя впевненість починається <em>зсередини</em></span>
               <img src="assets/images/hero-1.png" alt="Упаковка препарата Лактокріс">
               <a href="#" class="btn btn--primary">Потурбуватись про себе</a>
             </div>
-          </section>
-          
+          </section> -->
+          <div style="margin: 32px;background-color: red;height: 300vh;"></div>
         </main>
       </div>
         
@@ -66,5 +78,7 @@
         
       </footer>
     </div>
+
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
