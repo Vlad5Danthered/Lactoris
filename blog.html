@@ -6,12 +6,13 @@
   <title>Лакторіс - Блоги</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="preload" href="assets/fonts/LINESeedJP-Regular.ttf" as="font" type="font/truetype" crossorigin/>
-  <link rel="preload" href="assets/fonts/Raleway-Regular.ttf" as="font" type="font/truetype" crossorigin>
-  <link rel="preload" href="assets/fonts/Raleway-Medium.ttf" as="font" type="font/truetype" crossorigin>
-  <link rel="preload" href="assets/fonts/Raleway-SemiBold.ttf" as="font" type="font/truetype" crossorigin>
+  <link rel="preload" href="assets/fonts/LINESeedJP-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/fonts/Raleway-Light.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/fonts/Raleway-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/fonts/Raleway-Medium.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/fonts/Raleway-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
 
-  <link rel="stylesheet" href="assets/css/styles.css" as="style">
+  <link rel="preload" href="assets/css/styles.css" as="style">
 
   <!-- <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
@@ -37,7 +38,7 @@
     <div class="page__inner">
       <header class="page-header__wrapper">
         <div id="header" class="header">
-          <a href="/" class="logo" aria-label="На головну сторінку Лактокріс">Лактокріс</a>
+          <a href="/" class="logo not-style" aria-label="На головну сторінку Лактокріс">Лактокріс</a>
           <nav class="nav nav--desktop" aria-label="Головне меню">
             <ul class="not-style">
               <li><a href="#">Проблематика</a></li>
@@ -49,7 +50,7 @@
           <a href="#" class="btn btn--primary nav--desktop">Де придбати</a>
           <button class="btn btn--primary burger" id="header-burger" aria-expanded="false" aria-controls="mobile-nav" aria-label="Відкрити меню"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
         </div>
-        <nav class="nav nav--mobile" id="mobile-nav" label="Мобільне меню">
+        <nav class="nav nav--mobile" id="mobile-nav" aria-label="Мобільне меню">
           <ul class="not-style">
             <li><a href="#">Проблематика</a></li>
             <li><a href="#">Про Лактокріс</a></li>
@@ -94,7 +95,7 @@
             </p>
           </div>
           <div class="footer__social-links">
-            <a href="/" class="logo" aria-label="На головну сторінку Лактокріс">Лактокріс</a>
+            <a href="/" class="logo not-style" aria-label="На головну сторінку Лактокріс">Лактокріс</a>
             <nav class="social-links" aria-label="Соціальні мережі">
               <ul class="not-style">
                 <li class="social-links__item">

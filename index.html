@@ -1,18 +1,22 @@
 <!doctype html>
 <html lang="uk">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <!-- <base href=""> -->
     <title>Лакторіс - Головна</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preload" href="assets/fonts/LINESeedJP-Regular.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="assets/fonts/Raleway-Thin.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="assets/fonts/Raleway-Light.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="assets/fonts/Raleway-Regular.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="assets/fonts/Raleway-Medium.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="assets/fonts/Raleway-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
 
-    <link rel="stylesheet" href="assets/css/styles.css" as="style">
+    <link rel="preload" as="image" type="image/png" href="/assets/images/hero-1.png" fetchpriority="high">
+    <link rel="preload" as="image" type="image/png" href="/assets/images/hero-2.png" fetchpriority="high">
+    <link rel="preload" as="image" type="image/png" href="/assets/images/hero-3.png" fetchpriority="high">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
 
     <!-- <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
@@ -38,7 +42,7 @@
     <div class="page__inner">
       <header class="page-header__wrapper">
         <div id="header" class="header">
-          <a href="/" class="logo" aria-label="На головну сторінку Лактокріс">Лактокріс</a>
+          <a href="/" class="logo not-style" aria-label="На головну сторінку Лактокріс">Лактокріс</a>
           <nav class="nav nav--desktop" aria-label="Головне меню">
             <ul class="not-style">
               <li><a href="#">Проблематика</a></li>
@@ -50,7 +54,7 @@
           <a href="#" class="btn btn--primary nav--desktop">Де придбати</a>
           <button class="btn btn--primary burger" id="header-burger" aria-expanded="false" aria-controls="mobile-nav" aria-label="Відкрити меню"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
         </div>
-        <nav class="nav nav--mobile" id="mobile-nav" label="Мобільне меню">
+        <nav class="nav nav--mobile" id="mobile-nav" aria-label="Мобільне меню">
           <ul class="not-style">
             <li><a href="#">Проблематика</a></li>
             <li><a href="#">Про Лактокріс</a></li>
@@ -62,12 +66,19 @@
       </header>
 
       <main class="main">
-        <section class="hero section">
-          <div class="hero__content">
-            <h1>Лактокріс</h1>
-            <span>Твоя впевненість починається <em>зсередини</em></span>
-            <img src="assets/images/hero-1.png" alt="Упаковка препарата Лактокріс">
-            <a href="#" class="btn btn--primary">Потурбуватись про себе</a>
+        <section class="container section" aria-labelledby="hero-title">
+          <div class="hero">
+            <div class="hero__content">
+              <div class="hero__header">
+                <h1 id="hero-title">Лактокріс</h1>
+                <p>Твоя впевненість починається <em>зсередини</em></p>
+              </div>
+              <div class="hero__cta">
+                <a href="#" class="btn btn--primary">Потурбуватись про себе</a>
+                <img src="assets/images/hero-1.png" alt="Упаковка препарату Лактокріс" loading="eager">
+              </div>
+            </div>
+            <div class="hero__img"><img aria-hidden="true" src="assets/images/hero-3.png" alt="" loading="eager"></div>
           </div>
         </section>
       </main>
@@ -103,7 +114,7 @@
             </p>
           </div>
           <div class="footer__social-links">
-            <a href="/" class="logo" aria-label="На головну сторінку Лактокріс">Лактокріс</a>
+            <a href="/" class="logo not-style" aria-label="На головну сторінку Лактокріс">Лактокріс</a>
             <nav class="social-links" aria-label="Соціальні мережі">
               <ul class="not-style">
                 <li class="social-links__item">

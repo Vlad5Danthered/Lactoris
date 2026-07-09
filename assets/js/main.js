@@ -70,7 +70,7 @@ if (header) {
       header.classList.remove('is-hidden');
     }
 
-    lastScrollTop = Math.max(0, scrollTop);
+    lastScrollTop = Math.max(32, scrollTop);
     
   }, { passive: true });
 }
