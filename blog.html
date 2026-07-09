@@ -35,38 +35,90 @@
 </head>
 <body>
     <div class="page__inner">
-      <div class="page__content">
-        <header class="page-header__wrapper">
-          <div id="header" class="header">
-            <a href="#" class="logo" aria-label="На головну сторінку Лактокріс">Лактокріс</a>
-            <nav class="nav nav--desktop" aria-label="Головне меню">
-              <ul class="not-style">
-                <li><a href="#">Проблематика</a></li>
-                <li><a href="#">Про Лактокріс</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Корисно знати</a></li>
-              </ul>
-            </nav>
-            <a href="#" class="btn btn--primary nav--desktop">Де придбати</a>
-            <button class="btn btn--primary burger" id="header-burger" aria-expanded="false" aria-controls="mobile-nav" aria-label="Відкрити меню"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
-          </div>
-          <nav class="nav nav--mobile" id="mobile-nav" label="Мобільне меню">
+      <header class="page-header__wrapper">
+        <div id="header" class="header">
+          <a href="#" class="logo" aria-label="На головну сторінку Лактокріс">Лактокріс</a>
+          <nav class="nav nav--desktop" aria-label="Головне меню">
             <ul class="not-style">
               <li><a href="#">Проблематика</a></li>
               <li><a href="#">Про Лактокріс</a></li>
               <li><a href="#">FAQ</a></li>
               <li><a href="#">Корисно знати</a></li>
             </ul>
-            <a href="#" class="btn btn--primary nav--mobile">Де придбати</a>
           </nav>
-        </header>
-        <main class="main">
+          <a href="#" class="btn btn--primary nav--desktop">Де придбати</a>
+          <button class="btn btn--primary burger" id="header-burger" aria-expanded="false" aria-controls="mobile-nav" aria-label="Відкрити меню"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+        </div>
+        <nav class="nav nav--mobile" id="mobile-nav" label="Мобільне меню">
+          <ul class="not-style">
+            <li><a href="#">Проблематика</a></li>
+            <li><a href="#">Про Лактокріс</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Корисно знати</a></li>
+          </ul>
+          <a href="#" class="btn btn--primary nav--mobile">Де придбати</a>
+        </nav>
+      </header>
+      <main class="main">
 
-        </main>
-      </div>
+      </main>
         
-      <footer id="footer" class="footer">
-        
+      <footer class="page-footer__wrapper">
+        <div class="footer container" id="footer">
+          <address class="footer__links not-style">
+            <a href="https://eurolifecare.com.ua/" aria-label="На головну сторінку Eurolifecare">
+              <img src="assets/img/eurolifecare_logo.png" alt="Логотип Eurolifecare">
+            </a>
+            <div class="footer__link">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprites.svg#map-pin"></use>
+              </svg>
+              <a href="https://goo.gl/maps/f4gwStd8q7zMJ84H6" target="_blank" rel="noopener noreferrer">Україна, Київ, пр. Академіка Глушкова, 42 Б</a>
+            </div>
+            <div class="footer__link">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprites.svg#mail"></use>
+              </svg>
+              <a href="mailto:info@eurolifecare.com.ua">info@eurolifecare.com.ua</a>
+            </div>
+            <div class="footer__link">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprites.svg#phone"></use>
+              </svg>
+              <a href="tel:+380445266486">+38 (044) 526 64 86</a>
+            </div>
+          </address>
+          <div>
+            <p>
+              <small>Лактокріс. Реклама дієтичної добавки. Не є лікарським засобом. Перед вживанням ознайомтеся з інформаційним листком або інформацією на упаковці</small>
+            </p>
+          </div>
+          <div class="footer__social-links">
+            <a href="/" class="logo" aria-label="На головну сторінку Лактокріс">Лактокріс</a>
+            <nav class="social-links" aria-label="Соціальні мережі">
+              <ul class="not-style">
+                <li class="social-links__item">
+                  <a class="not-style" href="#" aria-label="Перейти на сторінку Facebook" target="_blank" rel="noopener noreferrer">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprites.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-links__item">
+                  <a class="not-style" href="#" aria-label="Перейти на сторінку Instagram" target="_blank" rel="noopener noreferrer">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprites.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__legal">
+            <a href="privacy-policy.html">Політика Конфіденційності</a>
+            <a href="https://levelmedia.com.ua/" target="_blank" rel="noopener noreferrer">Created by Level Media</a>
+          </div>
+        </div>
       </footer>
     </div>
 
