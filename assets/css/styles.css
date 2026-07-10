@@ -267,7 +267,7 @@ p:not(:last-child), .custom-table:not(:last-child), .quote-card:not(:last-child)
   margin: 0 0 12px;
 }
 p:last-child{
-  margin: 0 !important;
+  margin-bottom: 0 !important;
 }
 p, ul:not(.not-style) li, a, .a-link, th{
   font-size: var(--body-size);
@@ -545,13 +545,12 @@ footer{
 .section:first-child {
   margin-top: 0;
 }
-.section:last-child {
-  margin-bottom: 0;
-}
 
-.container{
+.container,
+.container-2 {
   padding: 0 120px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
   max-width: var(--container-1600);
 }
 
@@ -648,13 +647,51 @@ footer{
   max-width: 524px;
   width: 100%;
 }
+
+.problems {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+.problems__header {
+  text-align: center;
+}
+.problems__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  /* justify-content: center; */
+  /* flex-wrap: wrap; */
+}
+.problems__item {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  padding: 24px;
+  border-radius: 40px;
+  background: linear-gradient(180deg, var(--blue_100) 0%,var(--white) 100%);
+  /* width: 33.333%; */
+  /* flex: 1; */
+}
+.problems__img {
+  display: flex;
+  justify-content: center;
+}
+.problems__text h4 {
+  text-align: center;
+}
+.problems__text p {
+  color: var(--gray_400);
+}
+
 @media (max-width: 1439px) {
   :root {
-    --container-1600: calc(1600px + (32px * 2))
+    --container-1600: calc(1600px + (40px * 2))
   }
   .page-header__wrapper,
-  .container{
-    padding: 0 32px;
+  .container,
+  .container-2 {
+    padding: 0 40px;
   }
   .hero{
     padding: 40px 40px 0;
@@ -664,6 +701,9 @@ footer{
   }
 }
 @media (max-width: 1200px) {
+  .container-2 {
+    padding: 0 92px;
+  }
   .nav--desktop {
     display: none;
   }
@@ -729,6 +769,14 @@ footer{
     min-width: auto;
     max-width: 370px;
   }
+
+  .problems__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .problems__text p {
+    margin: 0 32px;
+    text-align: center;
+  }
 }
 @media (max-width: 767px) {
   :root {
@@ -740,19 +788,19 @@ footer{
 
     --body-size: 14px;
     --breadcrumbs-size:14px;
-
-    --container-1600: calc(1600px + (16px * 2))
   }
 
   h2,
   .h2 {
     line-height: var(--line-15);
   }
-
-  .page-header__wrapper,
-  .container{
-    padding: 0 16px;
+  .section {
+    margin: 80px 0;
   }
+  .container-2 {
+    padding: 0 64px;
+  }
+
   .header {
     padding: 12px 16px;
     background: radial-gradient(#E4EFF3,#89B2BF);
@@ -785,8 +833,27 @@ footer{
   .hero__img img{
     max-width: 350px;
   }
+
+  .problems__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .problems__text p {
+    margin: 0;
+  }
 }
 @media (max-width: 550px) {
+  :root {
+    --container-1600: calc(1600px + (16px * 2))
+  }
+  .section {
+    margin: 48px 0;
+  }
+  .page-header__wrapper,
+  .container,
+  .container-2 {
+    padding: 0 16px;
+  }
+
   .btn:not(.burger) {
     padding: 0 16px;
   }
