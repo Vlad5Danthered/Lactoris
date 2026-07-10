@@ -1,5 +1,5 @@
 // ======================================
-// 1. Mobile Menu: Toggle & Outside Click
+// Mobile Menu: Toggle & Outside Click
 // ======================================
 const header = document.querySelector('.page-header__wrapper');
 const nav = document.getElementById('mobile-nav');
@@ -29,7 +29,7 @@ document.addEventListener('click', (e) => {
 });
 
 // ========================================
-// 2. Accessibility: Close Menu on 'Escape'
+// Accessibility: Close Menu on 'Escape'
 // ========================================
 document.addEventListener('keydown', (e) => {
   if (!nav || !burger) return;
@@ -44,7 +44,7 @@ document.addEventListener('keydown', (e) => {
 });
 
 // ====================================
-// 3. Smart Header: Hide on Scroll Down
+// Smart Header: Hide on Scroll Down
 // ====================================
 let lastScrollTop = 0;
 
@@ -74,3 +74,46 @@ if (header) {
     
   }, { passive: true });
 }
+
+// =========
+//    FAQ
+// =========
+document.addEventListener('DOMContentLoaded', () => {
+  const faqHeaders = Array.from(document.querySelectorAll('.faq-header'));
+
+  faqHeaders.forEach((header, index) => {
+    header.addEventListener('click', () => {
+      const item = header.closest('.faq-item');
+      const content = item.querySelector('.faq-content');
+      const isActive = item.classList.contains('is-active');
+
+      if (!isActive) {
+        item.classList.add('is-active');
+        header.setAttribute('aria-expanded', 'true');
+      } else {
+        item.classList.remove('is-active');
+        header.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Arrow navigation (WAI-ARIA requirement)
+    header.addEventListener('keydown', (e) => {
+      let targetIndex = null;
+
+      if (e.key === 'ArrowDown') {
+        targetIndex = (index + 1) % faqHeaders.length;
+      } else if (e.key === 'ArrowUp') {
+        targetIndex = (index - 1 + faqHeaders.length) % faqHeaders.length;
+      } else if (e.key === 'Home') {
+        targetIndex = 0;
+      } else if (e.key === 'End') {
+        targetIndex = faqHeaders.length - 1;
+      }
+
+      if (targetIndex !== null) {
+        e.preventDefault();
+        faqHeaders[targetIndex].focus();
+      }
+    });
+  });
+});
