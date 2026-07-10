@@ -778,6 +778,29 @@ footer{
   text-align: center;
 }
 
+.where-buy {
+  display: flex;
+  gap: 16px;
+  align-items: end;
+}
+.where-buy__img {
+  width: 37.5%;
+}
+.where-buy__img img {
+  width: 100%;
+}
+.where-buy__info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1;
+}
+.where-buy__links {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 @media (max-width: 1439px) {
   :root {
     --container-1600: calc(1600px + (40px * 2))
@@ -904,6 +927,13 @@ footer{
   }
   .advantage__img {
     width: auto;
+  }
+
+  .where-buy {
+    flex-direction: column;
+  }
+  .where-buy__img {
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
