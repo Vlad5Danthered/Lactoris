@@ -269,6 +269,9 @@ p:not(:last-child), .custom-table:not(:last-child), .quote-card:not(:last-child)
 p:last-child{
   margin-bottom: 0 !important;
 }
+p:first-child {
+    margin-top: 0 !important;
+}
 p, ul:not(.not-style) li, a, .a-link, th{
   font-size: var(--body-size);
   line-height: var(--line-14);
@@ -579,6 +582,12 @@ footer{
   margin-left: auto;
   max-width: var(--container-1600);
 }
+.container-3 {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 150px;
+  max-width: calc(1062px + (150px * 2));
+}
 
 .hero {
   display: flex;
@@ -685,6 +694,9 @@ footer{
 .container__header {
   text-align: center;
 }
+.container__header *:last-child{
+  margin: 0;
+}
 
 .container__content {
   display: flex;
@@ -739,6 +751,32 @@ footer{
   width: 25%;
   align-self: center;
 }
+.advantage__img img {
+  width: 100%;
+}
+
+.how-to-take__steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.step-badge {
+  background-color: var(--blue_100);
+  border-radius: 100px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-badge *{
+  margin: 0;
+}
+
+.how-to-take__texts {
+  text-align: center;
+}
 
 @media (max-width: 1439px) {
   :root {
@@ -749,6 +787,14 @@ footer{
   .container-2 {
     padding: 0 40px;
   }
+
+  .container-3 {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 40px;
+    max-width: calc(1130px + (40px * 2));
+  }
+
   .hero{
     padding: 40px 40px 0;
   }
@@ -761,8 +807,12 @@ footer{
   }
 }
 @media (max-width: 1200px) {
-  .container-2 {
+  .container-2,
+  .container-3 {
     padding: 0 92px;
+  }
+  .container-3 {
+    max-width: var(--container-1600);
   }
   .nav--desktop {
     display: none;
@@ -875,7 +925,8 @@ footer{
   .section {
     margin: 80px 0;
   }
-  .container-2 {
+  .container-2,
+  .container-3 {
     padding: 0 64px;
   }
 
@@ -918,6 +969,9 @@ footer{
   .card__text p {
     margin: 0;
   }
+  .how-to-take__steps {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 550px) {
   :root {
@@ -928,7 +982,8 @@ footer{
   }
   .page-header__wrapper,
   .container,
-  .container-2 {
+  .container-2,
+  .container-3 {
     padding: 0 16px;
   }
 
