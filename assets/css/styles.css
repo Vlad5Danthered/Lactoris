@@ -674,20 +674,7 @@ footer{
   width: 100%;
 }
 
-.problems {
-  display: flex;
-  gap: 24px;
-  flex-direction: column;
-}
-.problems__header {
-  text-align: center;
-}
-.problems__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}
-.problems__item {
+.card {
   display: flex;
   gap: 16px;
   flex-direction: column;
@@ -695,14 +682,28 @@ footer{
   border-radius: 40px;
   background: linear-gradient(180deg, var(--blue_100) 0%,var(--white) 100%);
 }
-.problems__img {
+.container__header {
+  text-align: center;
+}
+
+.container__content {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+.problems__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.card__img {
   display: flex;
   justify-content: center;
 }
-.problems__text h4 {
+.card__text h4 {
   text-align: center;
 }
-.problems__text p {
+.card__text p {
   color: var(--gray_400);
 }
 
@@ -724,6 +725,19 @@ footer{
 }
 .medicinal-product__texts h2 {
   margin: 0;
+}
+
+.advantage {
+  display: flex;
+  gap: 16px;
+}
+.advantage .card{
+  flex: 1 0 35%;
+}
+
+.advantage__img {
+  width: 25%;
+  align-self: center;
 }
 
 @media (max-width: 1439px) {
@@ -819,7 +833,7 @@ footer{
   .problems__list {
     grid-template-columns: repeat(1, 1fr);
   }
-  .problems__text p {
+  .card__text p {
     margin: 0 32px;
     text-align: center;
   }
@@ -830,6 +844,16 @@ footer{
   }
   .medicinal-product__img {
     flex: 0 0 100%;
+  }
+
+  .advantage {
+    flex-direction: column;
+  }
+  .advantage .card{
+    flex: 1 0 100%;
+  }
+  .advantage__img {
+    width: auto;
   }
 }
 @media (max-width: 767px) {
@@ -891,7 +915,7 @@ footer{
   .problems__list {
     grid-template-columns: repeat(1, 1fr);
   }
-  .problems__text p {
+  .card__text p {
     margin: 0;
   }
 }
