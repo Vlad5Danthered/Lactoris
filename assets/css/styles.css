@@ -282,6 +282,15 @@ p > b{
   font-weight: 600;
 }
 
+.not-style-2 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.not-style-2 > * {
+  margin: 0 !important;
+}
+
 ul:not(.not-style),
 ol:not(.not-style) {
   margin: 0;
@@ -691,6 +700,17 @@ footer{
   border-radius: 40px;
   background: linear-gradient(180deg, var(--blue_100) 0%,var(--white) 100%);
 }
+.card__img {
+  display: flex;
+  justify-content: center;
+}
+.card__text h4 {
+  text-align: center;
+}
+.card__text p {
+  color: var(--gray_400);
+}
+
 .container__header {
   text-align: center;
 }
@@ -707,16 +727,6 @@ footer{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-}
-.card__img {
-  display: flex;
-  justify-content: center;
-}
-.card__text h4 {
-  text-align: center;
-}
-.card__text p {
-  color: var(--gray_400);
 }
 
 .medicinal-product {
@@ -799,6 +809,9 @@ footer{
   display: grid;
   gap: 8px;
   grid-template-columns: repeat(2, 1fr);
+}
+.where-buy__links li a {
+  width: 100%;
 }
 
 .faq-container {
@@ -889,6 +902,10 @@ footer{
   margin: 0;
   padding: 0 32px 16px 32px;
   color: var(--gray_400);
+}
+.faq-title-wrapper{
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 1439px) {
