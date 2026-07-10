@@ -454,7 +454,7 @@ p small{
 .logo {
   font-size: 40px;
   font-weight: 400;
-  line-height: var(--line-14);
+  line-height: normal !important;
   font-family: var(--font-heading);
   color: var(--blue_600);
   text-decoration: none;
@@ -490,16 +490,19 @@ p small{
   right: 0;
   top:0;
   z-index: 9;
-  margin: calc(16px + 52px) 32px 0 0;
+  margin: calc(16px + 52px) 40px 0 0;
   background-color: var(--blue_100);
   border-radius: 0 20px 24px 24px;
   width: 288px;
-  padding: 0px 16px 16px;
+  padding: 16px 16px 24px;
   transform: translateY(-20px);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   transition: transform 0.3s, opacity 0.3s, visibility 0.3s;
+}
+.btn.nav--mobile {
+  margin-top: 40px;
 }
 .nav.nav--mobile.active {
   transform: translateY(0);
@@ -507,6 +510,7 @@ p small{
   visibility: visible;
   pointer-events: auto;
   border-radius: 0 10px 24px 24px;
+  box-shadow: inset 0px 0px 0 2px var(--blue_600);
 }
 .nav a:not(.btn):hover {
     color: var(--blue_700);
@@ -539,6 +543,9 @@ footer{
   display: flex;
   gap: 8px;
   padding: 16px 0;
+}
+.footer__link a {
+  text-decoration: none;
 }
 .footer__social-links{
   display: flex;
@@ -667,7 +674,7 @@ footer{
   font-size: 36px;
   line-height: var(--line-14);
   color: var(--blue_600);
-  font-weight: 300;
+  font-weight: 400;
 }
 .hero em{
   font-style: italic;
@@ -772,9 +779,9 @@ footer{
 }
 
 .step-badge {
-  background-color: var(--blue_100);
+  background: linear-gradient(180deg, var(--blue_100) 0%,var(--white) 100%);
   border-radius: 100px;
-  padding: 8px 16px;
+  padding: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -944,6 +951,9 @@ footer{
   .container-3 {
     max-width: var(--container-1600);
   }
+  .eurolifecare-logo{
+    margin-bottom: 16px;
+  }
   .nav--desktop {
     display: none;
   }
@@ -1013,10 +1023,10 @@ footer{
   .problems__list {
     grid-template-columns: repeat(1, 1fr);
   }
-  .card__text p {
+  /* .card__text p {
     margin: 0 32px;
     text-align: center;
-  }
+  } */
   
   .medicinal-product {
     flex-direction: column;
@@ -1052,7 +1062,7 @@ footer{
     --h4-size: 18px;
     --h5-size: 16px;
 
-    --body-size: 14px;
+    /* --body-size: 14px; */
     --breadcrumbs-size:14px;
   }
 
@@ -1079,7 +1089,7 @@ footer{
     margin-top: 40px;
   }
   .nav.nav--mobile {
-    margin: calc(16px + 40px) 16px 0 0;
+    margin: calc(16px + 40px) 40px 0 0;
   }
   .footer__social-links{
     flex-direction: column;
@@ -1124,7 +1134,12 @@ footer{
   .container-3 {
     padding: 0 16px;
   }
-
+  .nav.nav--mobile {
+    margin: calc(16px + 40px) 16px 0 0;
+  }
+  .eurolifecare-logo{
+    margin-bottom: 24px;
+  }
   .btn:not(.burger) {
     padding: 0 16px;
   }
@@ -1147,6 +1162,13 @@ footer{
   .hero__cta img{
     margin-bottom: 16px;
     max-width: 100%;
+  }
+
+  .faq-header {
+    padding: 16px;
+  }
+  .faq-content-inner p {
+    padding: 0 16px 16px;
   }
 }
 @media (max-width: 390px) {
