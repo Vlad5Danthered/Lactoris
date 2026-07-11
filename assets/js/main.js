@@ -149,3 +149,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// =========
+// Footer button scroll to top
+// =========
+const scrollTopButton = document.querySelector('.scroll-to-top');
+
+if (scrollTopButton) {
+  scrollTopButton.addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    window.scrollTo({
+      top: 0
+    });
+  });
+}

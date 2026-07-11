@@ -208,6 +208,9 @@ a {
   color: var(--gray_500) !important;
 }
 
+.scroll-to-top {
+  align-self: end;
+}
 
 a:not(.btn) {
   transition: color 0.2s ease;
