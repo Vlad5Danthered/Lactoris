@@ -33,6 +33,36 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff"> -->
+
+  <!-- <script type="application/ld+json">
+  {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "[[*longtitle:default=`[[*pagetitle:htmlent]]`]]",
+      {* [[*content:notempty=`"articleBody": "[[*content:strip_tags:htmlent]]",`]] *}
+      [[*description:notempty=`"description": "[[*description:htmlent]]",`]]
+      "image": ["[[++site_url]][[*blog-image]]"],
+      "datePublished": "[[*publishedon:strtotime:date=`%Y-%m-%dT%H:%M:%S%z`]]",
+      "dateModified": "[[*editedon:default=`[[*publishedon]]`:strtotime:date=`%Y-%m-%dT%H:%M:%S%z`]]",
+      "author": {
+          "@type": "Organization",
+          "name": "[[++site_name]]",
+          "url": "[[++site_url]]"
+      },
+      "publisher": {
+          "@type": "Organization",
+          "name": "[[++site_name]]",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https://"
+          }
+      },
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "[[~[[*id]]? &scheme=`full`]]"
+      }
+  }
+  </script> -->
 </head>
 <body>
     <div class="page__inner">
@@ -61,7 +91,236 @@
         </nav>
       </header>
       <main class="main">
+        <div class="container breadcrumb">
+          <nav aria-label="Хлібні крихти">
+            <ul class="breadcrumbs not-style-2" itemscope itemtype="https://schema.org/BreadcrumbList">
+              
+              <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/" class="breadcrumbs__link" itemprop="item">
+                  <span itemprop="name">Головна</span>
+                </a>
+                <meta itemprop="position" content="1">
+              </li>
+
+              <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="blog.html" class="breadcrumbs__link" itemprop="item">
+                  <span itemprop="name">Блог</span>
+                </a>
+                <meta itemprop="position" content="2">
+              </li>
+
+              <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <span class="breadcrumbs__current" itemprop="name" aria-current="page">Стаття</span>
+                <meta itemprop="position" content="3">
+              </li>
+
+            </ul>
+          </nav>
+        </div>
         
+        <article class="section container container__content"> 
+          <div class="article">
+            <div class="article__content">
+              <header>
+                <h1>Заголовок</h1>
+                <div class="embed-responsive embed-responsive--4-3">
+                  <img src="assets/images/image-4-3.png" alt="Упаковка препарату Лактокріс" loading="lazy" width="1137" height="853">
+                </div>
+              </header>
+              <nav class="article__content-list article__content-list--mobile" aria-labelledby="toc-title--mobile">
+                <h2 id="toc-title--mobile">Зміст</h2>
+                <ol class="not-style-2">
+
+                </ol>
+              </nav>
+              <div class="article__texts">
+                <div>
+                  <h2>Заголовок 1</h2>
+                  <p>Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
+                  <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur. Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
+                  <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur.</p>
+                </div>
+                <div>
+                  <h2>Заголовок 2</h2>
+                  <p>Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
+                  <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur. Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
+                  <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur.</p>
+                </div>
+                <div>
+                  <h2>Заголовок 3</h2>
+                  <p>Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
+                  <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur. Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
+                  <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur.</p>
+                </div>
+                <div>
+                  <h2>Заголовок 3</h2>
+                  <p>Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
+                  <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur. Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
+                  <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur.</p>
+                </div>
+                <div>
+                  <h2>Заголовок 3</h2>
+                  <p>Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
+                  <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur. Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
+                  <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur.</p>
+                </div>
+                <div>
+                  <h2>Заголовок 3</h2>
+                  <p>Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
+                  <h3>Подзаголовок</h3>
+                  <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur. Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
+                  <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur.</p>
+                </div>
+              </div>
+
+              <aside class="where-buy where-buy--post where-buy--mobile" aria-labelledby="buy-title--mobile">
+                <div class="where-buy__img">
+                  <img src="assets/images/hero-1.png" alt="Упаковка препарату Лактокріс" loading="lazy">
+                </div>
+                <div class="where-buy__info">
+                  <div>
+                    <h2 id="buy-title--mobile">Дізнатись, де придбати</h2>
+                    <p>Лактокріс легко знайти в аптеках або замовити онлайн. Оберіть зручний для себе спосіб без зайвих зусиль.</p>
+                  </div>
+                  <ul class="where-buy__links not-style-2">
+                    <li><a class="btn btn--secondary" href="#" target="_blank" rel="noopener noreferrer" aria-label="Tabletki.ua (відкриється в новій вкладці)">Tabletki.ua</a></li>
+                    <li><a class="btn btn--secondary" href="#" target="_blank" rel="noopener noreferrer" aria-label="Liki24 (відкриється в новій вкладці)">Liki24</a></li>
+                    <li><a class="btn btn--secondary" href="#" target="_blank" rel="noopener noreferrer" aria-label="Подорожник (відкриється в новій вкладці)">Подорожник</a></li>
+                    <li><a class="btn btn--secondary" href="#" target="_blank" rel="noopener noreferrer" aria-label="Аптека 911 (відкриється в новій вкладці)">Аптека 911</a></li>
+                  </ul>
+                </div>
+              </aside>
+            </div>
+
+            <aside class="container__content article__sidebar" id="article_sidebar_main">
+              <nav class="article__content-list" aria-labelledby="toc-title--desktop">
+                <h2 id="toc-title--desktop">Зміст</h2>
+                <ol class="not-style-2">
+
+                </ol>
+              </nav>
+
+              <aside class="where-buy where-buy--post" aria-labelledby="buy-title--desktop">
+                <div class="where-buy__img">
+                  <img src="assets/images/hero-1.png" alt="Упаковка препарату Лактокріс" loading="lazy">
+                </div>
+                <div class="where-buy__info">
+                  <div>
+                    <h2 id="buy-title--desktop">Дізнатись, де придбати</h2>
+                    <p>Лактокріс легко знайти в аптеках або замовити онлайн. Оберіть зручний для себе спосіб без зайвих зусиль.</p>
+                  </div>
+                  <ul class="where-buy__links not-style-2">
+                    <li><a class="btn btn--secondary" href="#" target="_blank" rel="noopener noreferrer" aria-label="Tabletki.ua (відкриється в новій вкладці)">Tabletki.ua</a></li>
+                    <li><a class="btn btn--secondary" href="#" target="_blank" rel="noopener noreferrer" aria-label="Liki24 (відкриється в новій вкладці)">Liki24</a></li>
+                    <li><a class="btn btn--secondary" href="#" target="_blank" rel="noopener noreferrer" aria-label="Подорожник (відкриється в новій вкладці)">Подорожник</a></li>
+                    <li><a class="btn btn--secondary" href="#" target="_blank" rel="noopener noreferrer" aria-label="Аптека 911 (відкриється в новій вкладці)">Аптека 911</a></li>
+                  </ul>
+                </div>
+              </aside>
+            </aside>
+          </div>
+        </article>
+
+        <section class="section container container__content" aria-labelledby="related-articles-title">
+          <h2 id="related-articles-title">Читайте також:</h2>
+
+          <ul class="articles-grid not-style-2 articles-grid--post">
+            
+              <li class="articles-grid__item">
+                <article itemscope itemtype="https://schema.org/BlogPosting">
+                  <a href="post.html" class="embed-responsive embed-responsive--4-3" aria-hidden="true" tabindex="-1">
+                    <img src="assets/images/image-4-3.png" alt="Упаковка препарату Лактокріс" loading="lazy" width="388" height="291">
+                  </a>
+            
+                  <div class="article-content">
+                    <h2 class="h5" itemprop="headline">
+                      <a href="post.html" itemprop="url">Lorem ipsum dolor sit amet</a>
+                    </h2>
+            
+                    <time itemprop="datePublished" datetime="2023-08-12">12.08.2023</time>
+            
+                    <p itemprop="description">
+                      Lorem ipsum dolor sit amet, id audire voluptatum c...
+                    </p>
+            
+                    <a href="post.html" class="btn btn--secondary" aria-label="Читати більше про Lorem ipsum dolor sit amet">
+                      Читати більше
+                    </a>
+                  </div>
+                </article>
+              </li>
+              <li class="articles-grid__item">
+                <article itemscope itemtype="https://schema.org/BlogPosting">
+                  <a href="post.html" class="embed-responsive embed-responsive--4-3" aria-hidden="true" tabindex="-1">
+                    <img src="assets/images/image-4-3.png" alt="Упаковка препарату Лактокріс" loading="lazy" width="388" height="291">
+                  </a>
+            
+                  <div class="article-content">
+                    <h2 class="h5" itemprop="headline">
+                      <a href="post.html" itemprop="url">Lorem ipsum dolor sit amet</a>
+                    </h2>
+            
+                    <time itemprop="datePublished" datetime="2023-08-12">12.08.2023</time>
+            
+                    <p itemprop="description">
+                      Lorem ipsum dolor sit amet, id audire voluptatum c...
+                    </p>
+            
+                    <a href="post.html" class="btn btn--secondary" aria-label="Читати більше про Lorem ipsum dolor sit amet">
+                      Читати більше
+                    </a>
+                  </div>
+                </article>
+              </li>
+              <li class="articles-grid__item">
+                <article itemscope itemtype="https://schema.org/BlogPosting">
+                  <a href="post.html" class="embed-responsive embed-responsive--4-3" aria-hidden="true" tabindex="-1">
+                    <img src="assets/images/image-4-3.png" alt="Упаковка препарату Лактокріс" loading="lazy" width="388" height="291">
+                  </a>
+            
+                  <div class="article-content">
+                    <h2 class="h5" itemprop="headline">
+                      <a href="post.html" itemprop="url">Lorem ipsum dolor sit amet</a>
+                    </h2>
+            
+                    <time itemprop="datePublished" datetime="2023-08-12">12.08.2023</time>
+            
+                    <p itemprop="description">
+                      Lorem ipsum dolor sit amet, id audire voluptatum c...
+                    </p>
+            
+                    <a href="post.html" class="btn btn--secondary" aria-label="Читати більше про Lorem ipsum dolor sit amet">
+                      Читати більше
+                    </a>
+                  </div>
+                </article>
+              </li>
+              <li class="articles-grid__item">
+                <article itemscope itemtype="https://schema.org/BlogPosting">
+                  <a href="post.html" class="embed-responsive embed-responsive--4-3" aria-hidden="true" tabindex="-1">
+                    <img src="assets/images/image-4-3.png" alt="Упаковка препарату Лактокріс" loading="lazy" width="388" height="291">
+                  </a>
+            
+                  <div class="article-content">
+                    <h2 class="h5" itemprop="headline">
+                      <a href="post.html" itemprop="url">Lorem ipsum dolor sit amet</a>
+                    </h2>
+            
+                    <time itemprop="datePublished" datetime="2023-08-12">12.08.2023</time>
+            
+                    <p itemprop="description">
+                      Lorem ipsum dolor sit amet, id audire voluptatum c...
+                    </p>
+            
+                    <a href="post.html" class="btn btn--secondary" aria-label="Читати більше про Lorem ipsum dolor sit amet">
+                      Читати більше
+                    </a>
+                  </div>
+                </article>
+              </li>
+            
+            </ul>
+        </section>
       </main>
         
       <footer class="page-footer__wrapper">

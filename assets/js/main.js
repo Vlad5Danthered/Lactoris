@@ -1,10 +1,14 @@
-// ======================================
-// Mobile Menu: Toggle & Outside Click
-// ======================================
 const header = document.querySelector('.page-header__wrapper');
 const nav = document.getElementById('mobile-nav');
 const burger = document.getElementById('header-burger');
 
+const headings = document.querySelectorAll('.article__texts h2');
+const tocLists = document.querySelectorAll('.article__content-list ol');
+const article_sidebar = document.querySelector(".article__sidebar:not(.article__sidebar--mobile)")
+
+// ======================================
+// Mobile Menu: Toggle & Outside Click
+// ======================================
 document.addEventListener('click', (e) => {
   if (!nav || !burger) return;
 
@@ -66,8 +70,10 @@ if (header) {
     // Toggle header visibility based on scroll direction
     if (scrollTop > lastScrollTop) {
       header.classList.add('is-hidden');
+      article_sidebar.classList.add('active');
     } else {
       header.classList.remove('is-hidden');
+      article_sidebar.classList.remove('active');
     }
 
     lastScrollTop = Math.max(32, scrollTop);
@@ -114,6 +120,32 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         faqHeaders[targetIndex].focus();
       }
+    });
+  });
+});
+
+// =========
+// Auto Table of Contents
+// =========
+document.addEventListener('DOMContentLoaded', () => {
+  if (!headings.length || !tocLists) return;
+
+  tocLists.forEach(list => list.innerHTML = '');
+
+  headings.forEach((heading, index) => {
+    const id = `heading-${index + 1}`;
+    heading.id = id;
+
+    tocLists.forEach(list => {
+      const li = document.createElement('li');
+      const link = document.createElement('a');
+      
+      link.className = 'h3';
+      link.href = `#${id}`;
+      link.textContent = heading.textContent;
+
+      li.appendChild(link);
+      list.appendChild(li);
     });
   });
 });
