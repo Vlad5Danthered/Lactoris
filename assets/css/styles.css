@@ -75,35 +75,35 @@ a {
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../fonts/Raleway-Light.ttf") format("truetype");
+  src: url("../fonts/raleway-light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+  src: url("../fonts/raleway-regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../fonts/Raleway-Medium.ttf") format("truetype");
+  src: url("../fonts/raleway-medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../fonts/Raleway-SemiBold.ttf") format("truetype");
+  src: url("../fonts/raleway-semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../fonts/Raleway-Bold.ttf") format("truetype");
+  src: url("../fonts/raleway-bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -111,7 +111,7 @@ a {
 
 @font-face {
   font-family: "Line Seed JP";
-  src: url("../fonts/LINESeedJP-Regular.ttf") format("truetype");
+  src: url("../fonts/lineseedjp-regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
