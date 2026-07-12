@@ -70,10 +70,10 @@ if (header) {
     // Toggle header visibility based on scroll direction
     if (scrollTop > lastScrollTop) {
       header.classList.add('is-hidden');
-      article_sidebar.classList.add('active');
+      if (article_sidebar) article_sidebar.classList.add('active');
     } else {
       header.classList.remove('is-hidden');
-      article_sidebar.classList.remove('active');
+      if (article_sidebar) article_sidebar.classList.remove('active');
     }
 
     lastScrollTop = Math.max(32, scrollTop);
