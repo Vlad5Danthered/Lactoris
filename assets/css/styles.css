@@ -666,7 +666,6 @@ footer{
   background-position: top;
   background-size: cover;
   background-image: url("../images/hero-2.png");
-  position: relative;
   overflow: hidden;
 }
 .hero__ellipse{
@@ -724,6 +723,10 @@ footer{
   font-size: 36px;
   line-height: var(--line-14);
   color: var(--blue_600);
+  font-weight: 300;
+  margin: 0 !important;
+}
+.hero strong {
   font-weight: 400;
 }
 .hero em{
@@ -1205,6 +1208,9 @@ nav[aria-label="Навігація по сторінкам блогу"] {
   .hero{
     padding: 40px 40px 0;
   }
+  .hero h1 ~ p {
+    width: 89%;
+  }
   .hero__cta {
     flex-direction: column;
   }
@@ -1223,7 +1229,7 @@ nav[aria-label="Навігація по сторінкам блогу"] {
     display: flex;
     align-items: end;
     position: absolute;
-    right: 0;
+    right: -10%;
     bottom: 0px;
   }
   .hero__img img{
@@ -1234,10 +1240,6 @@ nav[aria-label="Навігація по сторінкам блогу"] {
   .problems__list {
     grid-template-columns: repeat(1, 1fr);
   }
-  /* .card__text p {
-    margin: 0 32px;
-    text-align: center;
-  } */
   
   .medicinal-product {
     flex-direction: column;
@@ -1296,7 +1298,6 @@ nav[aria-label="Навігація по сторінкам блогу"] {
     --h4-size: 18px;
     --h5-size: 16px;
 
-    /* --body-size: 14px; */
     --breadcrumbs-size:14px;
   }
   .article__content-list--mobile {
@@ -1397,13 +1398,16 @@ nav[aria-label="Навігація по сторінкам блогу"] {
     padding: 0 16px;
   }
   .hero__img{
-    display: none;
+    max-width: none;
+    width: 100%;
+    right: -35%;
   }
   .hero h1 {
     font-size: 36px;
   }
   .hero h1 ~ p {
     font-size: 24px;
+    width: 65%;
   }
   .hero{
     padding: 16px 16px 0;
@@ -1412,8 +1416,13 @@ nav[aria-label="Навігація по сторінкам блогу"] {
   .hero__cta {
     gap: 24px;
   }
-  .hero__cta img{
+  .hero__cta .btn {
+    order: 2;
     margin-bottom: 16px;
+  }
+  .hero__cta img{
+    margin-bottom: 0;
+    padding-right: 33px;
     max-width: 100%;
   }
 
@@ -1435,6 +1444,14 @@ nav[aria-label="Навігація по сторінкам блогу"] {
   }
   .article__content {
     gap: 32px;
+  }
+}
+@media (max-width: 550px) and (min-width: 390px) {
+  .hero__cta img{
+    width: 80%;
+  }
+  .hero__img {
+    right: -45%;;
   }
 }
 @media (max-width: 390px) {
