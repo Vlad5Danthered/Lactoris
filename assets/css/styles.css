@@ -604,7 +604,8 @@ footer{
   margin-top: 136px;
 }
 .breadcrumb ~ section,
-.breadcrumb ~ article {
+.breadcrumb ~ article,
+.breadcrumb ~ div {
   margin-top: 16px;
 }
 
@@ -1111,7 +1112,15 @@ nav[aria-label="Навігація по сторінкам блогу"] {
 .article__content-list--mobile {
   display: none;
 }
-
+.privacy-policy h2 + p {
+  margin-top: 24px;
+}
+.privacy-policy p + h2,
+.privacy-policy ul + h2,
+.privacy-policy ol + h2,
+.privacy-policy table + h2 {
+  margin-top: 40px;
+}
 @media (max-width: 1439px) {
   :root {
     --container-1600: calc(1600px + (40px * 2))
@@ -1373,6 +1382,16 @@ nav[aria-label="Навігація по сторінкам блогу"] {
 
   .container__header--blog {
     width: 100%;
+  }
+
+  .privacy-policy h2 + p {
+    margin-top: 16px;
+  }
+  .privacy-policy p + h2,
+  .privacy-policy ul + h2,
+  .privacy-policy ol + h2,
+  .privacy-policy table + h2 {
+    margin-top: 24px;
   }
 }
 @media (max-width: 550px) {
