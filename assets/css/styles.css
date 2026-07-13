@@ -464,7 +464,8 @@ p small{
   text-decoration: none;
 }
 
-.nav a:not(.btn) {
+.nav a:not(.btn),
+.nav span {
   text-decoration: none;
   color: var(--blue_600);
   font-weight: 500;
@@ -472,6 +473,14 @@ p small{
   line-height: var(--line-14);
   transition: color 0.2s ease;
   padding: 16px;
+}
+.nav a:not(.btn):hover {
+  color: var(--blue_700);
+}
+.nav .current-page {
+  color: var(--gray_400);
+  cursor: auto;
+  pointer-events: none;
 }
 .nav.nav--desktop ul {
   display: flex;
@@ -515,9 +524,6 @@ p small{
   pointer-events: auto;
   border-radius: 0 10px 24px 24px;
   box-shadow: inset 0px 0px 0 2px var(--blue_600);
-}
-.nav a:not(.btn):hover {
-    color: var(--blue_700);
 }
 .burger {
   display: none;
@@ -676,7 +682,7 @@ footer{
   width: 1941px;
   height: 1941px;
   z-index: 2;
-  background-image: url("../images/Ellipse.svg");
+  background-image: url("../images/ellipse.svg");
 }
 
 .hero__header{
@@ -1063,12 +1069,18 @@ nav[aria-label="Навігація по сторінкам блогу"] {
   display: flex;
   gap: 96px;
 }
-.article__content, .article__texts {
+.article__content {
   display: flex;
   flex-direction: column;
   gap: 24px;
 
   flex: 0 0 66%
+}
+.article__texts {
+  gap: 0 !important;
+}
+.article__texts p + h2 {
+  margin-top: 24px;
 }
 .article__sidebar {
   flex: 1;
@@ -1131,7 +1143,7 @@ nav[aria-label="Навігація по сторінкам блогу"] {
   .article {
     gap: 64px;
   }
-  .article__content, .article__texts {
+  .article__content {
     flex: 0 0 55%
   }
 
@@ -1266,7 +1278,7 @@ nav[aria-label="Навігація по сторінкам блогу"] {
   .article__sidebar {
     flex: 1 0 auto;
   }
-  .article__content, .article__texts {
+  .article__content {
     flex: auto
   }
   .where-buy--mobile {
@@ -1293,7 +1305,7 @@ nav[aria-label="Навігація по сторінкам блогу"] {
   .article__sidebar {
     display: none;
   }
-  .article__content, .article__texts {
+  .article__content {
     flex: auto;
   }
   .article__content {

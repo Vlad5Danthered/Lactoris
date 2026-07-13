@@ -2,8 +2,8 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8">
-    <!-- <base href=""> -->
-    <title>Лакторіс - Стаття</title>
+    <!-- <base href="[[++site_url]]"> -->
+    <title>Стаття | Лакторіс</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preload" href="assets/fonts/lineseedjp-regular.ttf" as="font" type="font/ttf" crossorigin>
@@ -36,31 +36,31 @@
 
     <!-- <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "headline": "[[*longtitle:default=`[[*pagetitle:htmlent]]`]]",
-        {* [[*content:notempty=`"articleBody": "[[*content:strip_tags:htmlent]]",`]] *}
-        [[*description:notempty=`"description": "[[*description:htmlent]]",`]]
-        "image": ["[[++site_url]][[*blog-image]]"],
-        "datePublished": "[[*publishedon:strtotime:date=`%Y-%m-%dT%H:%M:%S%z`]]",
-        "dateModified": "[[*editedon:default=`[[*publishedon]]`:strtotime:date=`%Y-%m-%dT%H:%M:%S%z`]]",
-        "author": {
-            "@type": "Organization",
-            "name": "[[++site_name]]",
-            "url": "[[++site_url]]"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "[[++site_name]]",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://"
-            }
-        },
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "[[~[[*id]]? &scheme=`full`]]"
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "[[*longtitle:default=`[[*pagetitle:htmlent]]`]]",
+      {* [[*content:notempty=`"articleBody": "[[*content:strip_tags:htmlent]]",`]] *}
+      [[*description:notempty=`"description": "[[*description:htmlent]]",`]]
+      "image": ["[[++site_url]][[*blog-image]]"],
+      "datePublished": "[[*publishedon:strtotime:date=`%Y-%m-%dT%H:%M:%S%z`]]",
+      "dateModified": "[[*editedon:default=`[[*publishedon]]`:strtotime:date=`%Y-%m-%dT%H:%M:%S%z`]]",
+      "author": {
+        "@type": "Organization",
+        "name": "[[++site_name]]",
+        "url": "[[++site_url]]"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "[[++site_name]]",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://"
         }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "[[~[[*id]]? &scheme=`full`]]"
+      }
     }
     </script> -->
   </head>
@@ -77,7 +77,7 @@
               <li><a href="#">Корисно знати</a></li>
             </ul>
           </nav>
-          <a href="#" class="btn btn--primary nav--desktop">Де придбати</a>
+          <a href="#where-buy" class="btn btn--primary nav--desktop">Де придбати</a>
           <button class="btn btn--primary burger" id="header-burger" aria-expanded="false" aria-controls="mobile-nav" aria-label="Відкрити меню"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
         </div>
         <nav class="nav nav--mobile" id="mobile-nav" aria-label="Мобільне меню">
@@ -87,7 +87,7 @@
             <li><a href="#">FAQ</a></li>
             <li><a href="#">Корисно знати</a></li>
           </ul>
-          <a href="#" class="btn btn--primary nav--mobile">Де придбати</a>
+          <a href="#where-buy--mobile" class="btn btn--primary nav--mobile">Де придбати</a>
         </nav>
       </header>
       <main class="main">
@@ -134,46 +134,34 @@
                 </ol>
               </nav>
               <div class="article__texts">
-                <div>
-                  <h2>Заголовок 1</h2>
-                  <p>Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
-                  <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur. Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
-                  <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur.</p>
-                </div>
-                <div>
-                  <h2>Заголовок 2</h2>
-                  <p>Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
-                  <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur. Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
-                  <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur.</p>
-                </div>
-                <div>
-                  <h2>Заголовок 3</h2>
-                  <p>Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
-                  <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur. Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
-                  <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur.</p>
-                </div>
-                <div>
-                  <h2>Заголовок 3</h2>
-                  <p>Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
-                  <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur. Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
-                  <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur.</p>
-                </div>
-                <div>
-                  <h2>Заголовок 3</h2>
-                  <p>Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
-                  <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur. Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
-                  <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur.</p>
-                </div>
-                <div>
-                  <h2>Заголовок 3</h2>
-                  <p>Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
-                  <h3>Подзаголовок</h3>
-                  <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur. Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
-                  <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur.</p>
-                </div>
+                <h2>Заголовок 1</h2>
+                <p>Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
+                <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur. Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
+                <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur.</p>
+                <h2>Заголовок 2</h2>
+                <p>Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
+                <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur. Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
+                <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur.</p>
+                <h2>Заголовок 3</h2>
+                <p>Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
+                <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur. Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
+                <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur.</p>
+                <h2>Заголовок 3</h2>
+                <p>Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
+                <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur. Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
+                <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur.</p>
+                <h2>Заголовок 3</h2>
+                <p>Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
+                <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur. Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
+                <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur.</p>
+                <h2>Заголовок 3</h2>
+                <p>Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
+                <h3>Подзаголовок</h3>
+                <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur. Lorem ipsum dolor sit amet, id audire voluptatum cum, ea adhuc graeco has, suas erant ius ne. Solum graeco qualisque no mei, pro lorem novum meliore ea. At vis meis consulatu ullamcorper, sit te minim nostrud maluisset. Ex has tantas primis, numquam ceteros moderatius in mei. Vim aeque latine consequat cu, mel oratio aperiri ea.</p>
+                <p>Munere voluptatum id vel, probatus phaedrum periculis ius te. Eum prima appareat id, ne munere fastidii constituam mei, no lorem invidunt referrentur vel. Et ullum similique mel, mei te denique neglegentur consequuntur.</p>
               </div>
 
-              <aside class="where-buy where-buy--post where-buy--mobile" aria-labelledby="buy-title--mobile">
+              <aside class="where-buy where-buy--post where-buy--mobile" id="where-buy--mobile" aria-labelledby="buy-title--mobile">
                 <div class="where-buy__img">
                   <img src="assets/images/hero-1.png" alt="Упаковка препарату Лактокріс" loading="lazy">
                 </div>
@@ -200,7 +188,7 @@
                 </ol>
               </nav>
 
-              <aside class="where-buy where-buy--post" aria-labelledby="buy-title--desktop">
+              <aside class="where-buy where-buy--post" id="where-buy" aria-labelledby="buy-title--desktop">
                 <div class="where-buy__img">
                   <img src="assets/images/hero-1.png" alt="Упаковка препарату Лактокріс" loading="lazy">
                 </div>
@@ -332,7 +320,8 @@
           </button>
           <address class="footer__links not-style">
             <a href="https://eurolifecare.com.ua/" aria-label="На головну сторінку Eurolifecare">
-              <img src="assets/img/eurolifecare_logo.png" alt="Логотип Eurolifecare">
+              <!-- <img src="assets/img/eurolifecare_logo.png" alt="Логотип Eurolifecare"> -->
+              <img src="https://eurolifecare.com.ua/wp-content/uploads/2021/03/logo.svg" alt="Логотип Eurolifecare">
             </a>
             <div class="footer__link">
               <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">

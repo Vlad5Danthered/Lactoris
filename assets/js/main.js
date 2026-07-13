@@ -141,8 +141,19 @@ document.addEventListener('DOMContentLoaded', () => {
       const link = document.createElement('a');
       
       link.className = 'h3';
-      link.href = `#${id}`;
+      link.href = '#' + id;
       link.textContent = heading.textContent;
+
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        heading.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+
+        history.pushState(null, null, window.location.pathname + window.location.search + `#${id}`);
+      });
 
       li.appendChild(link);
       list.appendChild(li);
