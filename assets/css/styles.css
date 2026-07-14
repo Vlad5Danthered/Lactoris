@@ -260,6 +260,7 @@ h3, .h3 {
 }
 h4, .h4 {
   font-size: var(--h4-size);
+  text-underline-offset: 4px;
 }
 h5, .h5 {
   font-size: var(--h5-size);
@@ -708,7 +709,7 @@ footer{
   align-items: end;
 }
 
-.hero h1 {
+.hero__content h1 {
   font-family: var(--font-heading);
   font-size: 80px;
   font-weight: 400;
@@ -716,7 +717,7 @@ footer{
   margin: 0;
 }
 
-.hero h1 ~ p {
+.hero__content h1 ~ p {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -728,10 +729,10 @@ footer{
   font-weight: 300;
   margin: 0 !important;
 }
-.hero strong {
+.hero__content strong {
   font-weight: 400;
 }
-.hero em{
+.hero__content em{
   font-style: italic;
   background-color: var(--white);
   border-radius: 100px;
@@ -1130,26 +1131,45 @@ nav[aria-label="Навігація по сторінкам блогу"] {
   display: flex;
   flex-direction: column;
   flex: 1;
+  justify-content: center;
   margin-top: 152px;
   margin-bottom: 30px;
 }
 .page-not-found__content {
-  margin: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 24px;
+  z-index: 10;
+  align-items: start;
+  justify-content: end;
 }
 .page-not-found__content * {
+  margin: 0 !important;
+}
+.page-not-found > .hero {
+  padding: 0 96px;
   margin: 0;
 }
 .page-not-found__content h1 {
+  line-height: var(--line-12);
   font-weight: 600;
-  font-size: 200px;
-  line-height: normal;
-  margin-bottom: 20px;
 }
-.page-not-found__content p {
+.page-not-found-404 {
+  font-size: 300px;
+  font-weight: 600;
+  line-height: 1.2;
+  height: 324px;
+  color: var(--white);
+  margin: 0 !important;
+  z-index: 10;
+}
+.page-not-found__content {
+  padding: 40px 0;
+}
+.page-not-found__content > p {
   margin-bottom: 32px;
+  font-size: 16px;
+  font-weight: 400;
 }
 @media (max-width: 1439px) {
   :root {
@@ -1251,7 +1271,7 @@ nav[aria-label="Навігація по сторінкам блогу"] {
   .hero{
     padding: 40px 40px 0;
   }
-  .hero h1 ~ p {
+  .hero__content h1 ~ p {
     width: 89%;
   }
   .hero__cta {
@@ -1332,11 +1352,20 @@ nav[aria-label="Навігація по сторінкам блогу"] {
   .article__sidebar > .where-buy {
     display: none;
   }
-  .page-not-found h1{
-    font-size:160px;
+  .page-not-found .hero {
+    flex-direction: column;
   }
-  .page-not-found p{
-    font-size: 20px;
+  .page-not-found__content {
+    align-items: center;
+    text-align: center;
+    padding: 24px 0;
+  }
+  .page-not-found-404 {
+    font-size: 160px;
+    height: 169px;
+  }
+  .page-not-found-404 {
+    text-align: center;
   }
 }
 @media (max-width: 767px) {
@@ -1436,13 +1465,8 @@ nav[aria-label="Навігація по сторінкам блогу"] {
   .privacy-policy > div{
     max-width: auto;
   }
-  
-  .page-not-found h1{
-    font-size:100px;
-  }
-  .page-not-found p{
-    font-size: 16px;
-    margin-bottom:24px;
+  .page-not-found > .hero {
+    padding: 0 40px;
   }
 }
 @media (max-width: 550px) {
@@ -1461,25 +1485,25 @@ nav[aria-label="Навігація по сторінкам блогу"] {
   .nav.nav--mobile {
     margin: calc(16px + 40px) 16px 0 0;
   }
-  .eurolifecare-logo{
+  .eurolifecare-logo {
     margin-bottom: 24px;
   }
   .btn:not(.burger) {
     padding: 0 16px;
   }
-  .hero__img{
+  .hero__img {
     max-width: none;
     width: 100%;
     right: -35%;
   }
-  .hero h1 {
+  .hero__content h1 {
     font-size: 36px;
   }
-  .hero h1 ~ p {
+  .hero__content h1 ~ p {
     font-size: 24px;
     width: 65%;
   }
-  .hero{
+  .hero {
     padding: 16px 16px 0;
     border-radius: 32px;
   }
@@ -1514,6 +1538,10 @@ nav[aria-label="Навігація по сторінкам блогу"] {
   }
   .article__content {
     gap: 32px;
+  }
+  .page-not-found-404 {
+    font-size: 128px;
+    height: 134px;
   }
 }
 @media (max-width: 550px) and (min-width: 390px) {

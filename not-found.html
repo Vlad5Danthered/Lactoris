@@ -67,21 +67,26 @@
 
       <main class="main" style="display:flex">
         <div class="container page-not-found">
-          <div class="page-not-found__content">
-            <h1>404</h1>
-            <p>Сторінка не знайдено</p>
-            <a href="/" class="btn btn--primary">На головну</a>
+          <div class="hero">
+            <div class="page-not-found__content">
+              <h1 id="hero-title">
+                <span class="visually-hidden">Помилка 404: </span>Упс...
+              </h1>
+              <p>Сторінка, яку ви запитували, не може бути знайдена або не існує.</p>
+              <a href="/" class="btn btn--primary">На головну</a>
+            </div>
+            <p class="page-not-found-404" aria-hidden="true">404</p>
           </div>
         </div>
       </main>
         
       <footer class="page-footer__wrapper">
         <div class="footer container" id="footer">
-          <button class="btn btn--primary btn--icon scroll-to-top">
+          <!-- <button class="btn btn--primary btn--icon scroll-to-top">
             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprites.svg#arrow-up"></use>
             </svg>
-          </button>
+          </button> -->
           <address class="footer__links not-style">
             <a class="eurolifecare-logo" href="https://eurolifecare.com.ua/" aria-label="На головну сторінку Eurolifecare" target="_blank" rel="noopener noreferrer">
               <!-- <img src="assets/img/eurolifecare_logo.png" alt="Логотип Eurolifecare"> -->
