@@ -853,7 +853,7 @@ footer{
 
 .where-buy {
   display: flex;
-  gap: 16px;
+  gap: 96px;
   align-items: end;
 }
 .where-buy__img {
@@ -1324,6 +1324,7 @@ nav[aria-label="Навігація по сторінкам блогу"] {
 
   .where-buy {
     flex-direction: column;
+    gap: 16px;
   }
   .where-buy__img,
   .where-buy__info {
