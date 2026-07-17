@@ -13,7 +13,7 @@
   --blue_800: #08252B;
 
   --font-main: Raleway,Arial,sans-serif;
-  --font-heading: "Line Seed JP",Arial,sans-serif;
+  --font-heading: "Line Seed JP",Raleway,Arial,sans-serif;
 
 
   --h1-size: 64px;
@@ -70,41 +70,48 @@ body {
 main{
   flex: 1 0 auto;
 }
-
+picture, 
+picture img {
+  display: block;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
 a {
   color: inherit;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../fonts/raleway-light.ttf") format("truetype");
+  src: url("../fonts/woff2/raleway-light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../fonts/raleway-regular.ttf") format("truetype");
+  src: url("../fonts/woff2/raleway-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../fonts/raleway-medium.ttf") format("truetype");
+  src: url("../fonts/woff2/raleway-medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../fonts/raleway-semibold.ttf") format("truetype");
+  src: url("../fonts/woff2/raleway-semibold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../fonts/raleway-bold.ttf") format("truetype");
+  src: url("../fonts/woff2/raleway-bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -112,7 +119,7 @@ a {
 
 @font-face {
   font-family: "Line Seed JP";
-  src: url("../fonts/lineseedjp-regular.ttf") format("truetype");
+  src: url("../fonts/woff2/subset-lineseedjp-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -665,11 +672,18 @@ footer{
   margin-top: 168px;
   padding: 40px 96px 0;
   border-radius: 64px;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  background-image: url("../images/hero-2.png");
+  /* background-repeat: no-repeat; */
+  /* background-position: top; */
+  /* background-size: cover; */
+  /* background-image: url("../images/hero-2.png"); */
   overflow: hidden;
+}
+.hero-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .hero__ellipse{
   position: absolute;
@@ -860,7 +874,8 @@ footer{
   width: 37.5%;
 }
 .where-buy__img img {
-  width: 100%;
+  /* width: 100%; */
+  max-width: 600px;
 }
 .where-buy__info {
   display: flex;
@@ -879,6 +894,7 @@ footer{
 
 .where-buy--post {
   flex-direction: column;
+  gap: 24px;
 }
 .where-buy--post .where-buy__img,
 .where-buy--post .where-buy__info {
@@ -969,12 +985,13 @@ footer{
 }
 
 .faq-content-inner {
+  padding: 0 32px 0;
   min-height: 0;
   overflow: hidden;
 }
-.faq-content-inner p {
-  margin: 0;
+.faq-item.is-active .faq-content-inner {
   padding: 0 32px 16px 32px;
+  margin: 0;
   color: var(--gray_400);
 }
 .faq-title-wrapper{
@@ -1079,8 +1096,10 @@ nav[aria-label="Навігація по сторінкам блогу"] {
   display: flex;
   flex-direction: column;
   gap: 24px;
-
   flex: 0 0 66%
+}
+.article__content img {
+  border-radius: 48px;
 }
 .article__texts {
   gap: 0 !important;
@@ -1139,7 +1158,7 @@ nav[aria-label="Навігація по сторінкам блогу"] {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  z-index: 10;
+  z-index: 3;
   align-items: start;
   justify-content: end;
 }
@@ -1161,7 +1180,7 @@ nav[aria-label="Навігація по сторінкам блогу"] {
   height: 324px;
   color: var(--white);
   margin: 0 !important;
-  z-index: 10;
+  z-index: 3;
 }
 .page-not-found__content {
   padding: 40px 0;
@@ -1353,6 +1372,9 @@ nav[aria-label="Навігація по сторінкам блогу"] {
   .article__sidebar > .where-buy {
     display: none;
   }
+  .where-buy img {
+    width: 100%;
+  }
   .page-not-found .hero {
     flex-direction: column;
   }
@@ -1526,6 +1548,12 @@ nav[aria-label="Навігація по сторінкам блогу"] {
   }
   .faq-content-inner p {
     padding: 0 16px 16px;
+  }
+  .faq-content-inner {
+    padding: 0 16px 0;
+  }
+  .faq-item.is-active .faq-content-inner {
+    padding: 0 16px 16px 16px;
   }
 
   .articles-grid {

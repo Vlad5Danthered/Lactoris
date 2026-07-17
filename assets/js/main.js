@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const li = document.createElement('li');
       const link = document.createElement('a');
       
-      link.className = 'h3';
+      link.className = 'h4';
       link.href = '#' + id;
       link.textContent = heading.textContent;
 
@@ -173,5 +173,10 @@ if (scrollTopButton) {
     window.scrollTo({
       top: 0
     });
+
+    const topElement = document.body;
+    topElement.setAttribute('tabindex', '-1');
+    topElement.style.outline = 'none';
+    topElement.focus();
   });
 }
